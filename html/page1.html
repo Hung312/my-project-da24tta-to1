@@ -3,13 +3,57 @@
 	<head>
 		<title>Thông tin cá nhân</title>
 		<meta charset = "utf-8">
+		<link rel ="stylesheet" href= "../css/style1.css">
 	</head>
 	<body>
-		<h1 style="font-size: 25px">Nguyễn Trường Hưng</h1>
+		<h1 class="title" style="font-size: 25px">Nguyễn Trường Hưng</h1>
 		<h2 style="font-size: 18px">Trang thông tin cá nhân</h2>
-		<div style="border:1px solid gray;">
-			<span><img src="../assets/images/avatar.png" alt="avatar" style="height:150px;"></span>
-			<span style="text-align:middled"> Xin chào, tôi tên là <b>Nguyễn Trường Hưng</b>, sinh viên năm hai ngành <b>Công nghệ thông tin</b>.</span>
-		</div>
+		<table class="intro1">
+			<tr>
+				<td>
+					<img src="../assets/images/avatar.png" alt="avatar" class="avatar">
+				</td>
+				<td class="intro1">
+					<div>Giới thiệu bản thân</div>
+					Xin chào, tôi tên là <b>Nguyễn Trường Hưng</b>, sinh viên ngành <b>Công nghệ thông tin</b>, đang học năm 2 tại <b>Đại học Trà Vinh</b>
+				</td>
+			</tr>
+		</table>
+		<h3>Thông tin chi tiết</h3>
+		<table class="intro1">
+			<tr class="intro2">
+				<th class="intro2">Thông tin</th>
+				<th class="intro2">Nội dung</th>
+			</tr>
+			<tr class="intro1">
+				<td class="intro1">Họ tên</td>
+				<td>Nguyễn Trường Hưng</td>
+			</tr>
+			<tr class="intro2">
+				<td class="intro2">Năm sinh</td>
+				<td>2006</td>
+			</tr>
+			<tr class="intro1">
+				<td class="intro1">Trường</td>
+				<td>Đại học Trà Vinh</td>
+			</tr>
+		</table>
+		<h3>Sở thích</h3>
+		<ul class="ul1">
+			<li>Nghe nhạc</li>
+			<li>Chơi thể thao</li>
+			<li>Chơi game</li>
+		</ul>
+		<h3>Kỹ năng và mục tiêu</h3>
+		<ol type="I">
+			<li>Học HTML,CSS,JS cơ bản</li>
+			<li>Ứng dụng CNTT cơ bản</li>
+			<li>Thành thạo tiếng Anh</li>
+		</ol>
+		<h3>Liên hệ</h3>
+		<div class="contact">
+			<div>SĐT: 03394757251</div>
+			<div>Gmail: <a href="mailto:nguyenhungeqqw@gmail.com" target="_blank">nguyenhungeqqw@gmail.com</a></div>
+			<div>Github: <a href="https://github.com/Hung312" target="_blank">Hung312</a></div>
 	</body>
 </html>
