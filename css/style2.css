@@ -5,6 +5,7 @@
 	font-size: 18px;
 }
 h3#title{
+	color:rgb(174, 39, 39);
 	text-transform: uppercase;
 	font-size: 20px;
 }
@@ -12,7 +13,7 @@ div.container{
 	display: flex;
 	text-align: center;
 	background-color:rgb(255, 255, 255);
-	margin: 165px;
+	margin-top: 165px;
 	padding: 35px;
 	box-shadow: 10px 5px 11px 5px rgba(0, 0, 0, 0.54);
 	border-radius: 8px;
@@ -26,7 +27,6 @@ input.button{
 	border: 1px rgb(73, 78, 78) cross;
 }
 body{
-	background-image: url("../assets/images/background.jpg");
 	display: flex;
 	align-items: center;
 	justify-content: center;

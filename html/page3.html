@@ -7,19 +7,62 @@
 	</head>
 	<body>
 			<div class="container">
-				<h3 id="title">Đăng ký</h3>
 				<form>
 					<div class="form-control">
-						<label id="fullname">Họ tên:</label>
-						<input id="form-config" type="txt" id="txtFullname" name="Fullname">
+						<label for="txtFullname">Họ tên:</label>
+						<input id="fullname-config" type="text" id="txtFullname" name="Fullname" placeholder="Nguyễn Văn A">
 					</div>
 					<div class="form-control">
-						<label id="MSSV">Mã số sinh viên:</label>
-						<input id="form-config" type="number" id="numMSSV" name="MSSV">
+						<label for="telMSSV">Mã số sinh viên:</label>
+						<input id="MSSV-config" type="tel" id="telMSSV" name="MSSV">
 					</div>
 					<div class="form-control">
-						<label id="class">Lớp:</label>
-						<input id="form-config" type="radio" id="radClass" name="Class">
+						<label>Lớp:</label><br>
+						<input id="class-config" type="radio" id="Class_DA24TTA" name="DA24TTA" value ="DA24TTA">
+						<label for="Class_DA24TTA">DA24TTA</label><br>
+						<input id="class-config" type="radio" id="Class_DA24TTB" name="DA24TTB" value ="DA24TTB">
+						<label for="Class_DA24TTB">DA24TTB</label><br>
+						<input id="class-config" type="radio" id="Class_DA24TTC" name="DA24TTC" value ="DA24TTC">
+						<label for="Class_DA24TTC">DA24TTC</label><br>
+						<input id="class-config" type="radio" id="Class_DA24TTD" name="DA24TTD" value ="DA24TTD">
+						<label for="Class_DA24TTD">DA24TTD</label><br>
+					</div>
+					<div class="form-control">
+						<label for ="date">Ngày sinh:</label>
+						<input id="date-config" type="date" id="date" name="Date">
+					</div>
+					<div class="form-control">
+						<label for="txtAddress">Địa chỉ:</label>
+						<input id="address-config" type="txt" id="txtAddress" name="Address">
+					</div>
+					<div class="form-control">
+						<label for="numPhone">Số điện thoại:</label>
+						<input id="phone-config" type="tel" id="numPhone" name="Phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"placeholder="1234-567-890">
+					</div>
+					<div class="form-control">
+						<label for="selectGender">Giới tính:</label>
+						<select id="gender-config" name="Gender" id="selectGender">
+							<option value ="Nam">Nam</option>
+							<option value ="Nữ">Nữ</option>
+						</select>
+					</div>
+					<div class="form-control">
+						<label>Điểm mạnh:</label><br>
+						<input id="pros-config" type="checkbox" id="Pros-WebPage" name="WebPage" value="Thiết kế web">
+						<label for="Pros-WebPage">Thiết kế web</label>
+						<input id="pros-config" type="checkbox" id="Pros-Java" name="Java" value="Lập trình hướng đối tượng">
+						<label for="Pros-Java">Lập trình hướng đối tượng</label><br>
+						<input id="pros-config" type="checkbox" id="Pros-Database" name="Database" value="Cơ sở dữ liệu">
+						<label for="Pros-Database">Cơ sở dữ liệu</label>
+						<input id="pros-config" type="checkbox" id="Pros-OS" name="OS" value="Hệ điều hành">
+						<label for="Pros-OS">Hệ điều hành</label><br>
+					</div>
+					<div class="form-control">
+						<label for="txtaIntro">Giới thiệu bản thân(tối đa 200 ký tự):</label><br>
+						<textarea id="intro-config" id="txtaIntro" name="Intro" maxlength="200" placeholder="..." rows="4" cols="50"></textarea>
+					</div>
+					<div class="form-control">
+						<input id="button-config" type="submit" id="btnRegister" name="Register" value="Đăng ký">
 					</div>
 				</form>
 			</div>

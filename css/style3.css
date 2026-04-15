@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Courier New', Courier, monospace;
+}
+div.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 150px;
+    padding:4%;
+    box-shadow: 10px 13px 15px 4px rgba(0, 0, 0, 0.80);
+    border-radius: 8px;
+    font-size:20px;
+}
+div.form-control{
+    margin:4px;
+    padding:4px;
+}
+input#fullname-config{
+    width: 315px;
+}
+input#MSSV-config{
+    width: 207px;
+}
+input#address-config{
+    width:305px;
+}
+input#button-config{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(174, 39, 39);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
