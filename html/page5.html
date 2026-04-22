@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang = "vi">
+	<head>
+		<title>Hóa đơn</title>
+		<meta charset = "utf-8">
+		<style>
+			*{
+				font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+			form{
+				box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.45);
+				border-radius: 8px;
+			}
+		</style>
+	</head>
+	<body>
+			<form id="FrmInBCC">
+				<h2>Bảng cửu chương</h2>
+				<label for="numBCC">Nhập số từ 2 -> 9: </label>
+				<input id="numBCC" name ="numBCC" type="number" min = "2" max= "9">
+				<!--<input type="button" onclick="InBCC();" value="In">    -->
+				<button type="button" onclick ="InBCC()">In</button>
+				<div id="KQ">
+				</div>
+			</form>
+			<script>
+				function InBCC(){
+					const myForm = document.forms["FrmInBCC"];
+					const myNumber = myForm.elements[0];
+					let num = parseInt(myNumber.value);
+					let kq = "";
+					for (let i=1; i<=10; i++){
+						kq += num + " x " + i + " = " + (num*i) + "<br>";
+					}
+					document.getElementById("KQ").innerHTML=kq;
+				}
+			</script>
+	</body>
+</html>
