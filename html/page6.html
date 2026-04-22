@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html lang = "vi">
+	<head>
+		<title>Quản lý học phần</title>
+		<meta charset = "utf-8">
+	</head>
+	<body>
+			<div class="container">
+				<h2>Quản lý học phần</h2>
+				<button type="button" onclick="add();">Thêm</button>
+			</div>
+			<script>
+				function add(){
+					const newRow = document.createElement("div");
+						newRow.setAttribute("class","row");
+					const nhapMon = document.createElement("input");
+						nhapMon.setAttribute("type","text");
+						nhapMon.setAttribute("placeholder","Nhập môn");
+						nhapMon.setAttribute("width","60px");
+					newRow.appendChild(nhapMon);
+					const STC = document.createElement("input");
+						STC.setAttribute("type","number");
+						STC.setAttribute("placeholder","Số tín chỉ");
+					newRow.appendChild(STC);
+					const MainOption = document.createElement("select");
+					const Option1 = document.createElement("option");
+						Option1.setAttribute("value","Cơ sở ngành");
+						Option1.append("Cơ sở ngành");
+						MainOption.appendChild(Option1);
+					const Option2 = document.createElement("option");
+						Option2.setAttribute("value","Chuyên ngành");
+						Option2.append("Chuyên ngành");
+						MainOption.appendChild(Option2);
+					newRow.appendChild(MainOption);
+					const Remove = document.createElement("button");
+						Remove.setAttribute("type","button");
+						Remove.setAttribute("onclick","newRow.removeChild(newRow.lastElementChild)");
+						Remove.append("Xóa");
+					newRow.appendChild(Remove);
+					document.body.appendChild(newRow);
+				}
+			</script>
+	</body>
+</html>
