@@ -34,7 +34,7 @@
 					newRow.appendChild(MainOption);
 					const Remove = document.createElement("button");
 						Remove.setAttribute("type","button");
-						Remove.setAttribute("onclick","newRow.removeChild(newRow.lastElementChild)");
+						Remove.setAttribute("onclick","removeChild(lastElementChild)");
 						Remove.append("Xóa");
 					newRow.appendChild(Remove);
 					document.body.appendChild(newRow);
