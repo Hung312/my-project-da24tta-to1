@@ -1,6 +1,4 @@
-div.product-item{
-    border: 1px solid grey;
-}
-div.product-image{
-    border: 1px solid grey;
+img.image-property{
+    width: 175px;
+    height: 175px;
 }
